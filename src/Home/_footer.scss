@@ -1,0 +1,98 @@
+
+.footer_container{
+    background: linear-gradient(to right, #232526, #414345);
+    
+    .contact_div{
+        text-align: center;
+        margin: 0 auto 50px;
+        line-height: 50px;
+        color: #fff;
+        position: relative;
+        top: 30px;
+
+        &::before{
+            content: '';
+            width: 100px;
+            height: 1px;
+            position: absolute;
+            background: #fff;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+
+    .footer_div{
+        // background: blue;
+        max-width: 1080px;
+        margin: auto;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-bottom: 50px;
+        position: relative;
+
+        .inner_div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            line-height: 30px;
+            padding: 23px 0;
+
+            h3{
+                color: #a4b0be;       
+            }
+            li{
+                list-style-type: none;
+                color: #fff;
+                font-size: 13px;
+                cursor: pointer;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .copyright{
+        max-width: 1080px;
+        margin: auto;
+        position: relative;        
+        text-align: center;      
+        bottom: 10px;
+
+        &::before {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: -15px;
+            }
+
+        p{
+            font-size: 15px;
+            color: #fff;
+
+            span{
+                color: #a4b0be;
+            }
+        }
+    }
+}
+
+// media query for less than 600 screen size
+
+@media screen and (max-width: 600px) {
+    .inner_div {
+        justify-content: center !important;
+
+        h3{
+            margin: 3px; 
+        }
+        li {
+            text-align: center;
+        }
+    }
+} 

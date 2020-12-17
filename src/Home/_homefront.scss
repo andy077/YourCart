@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.nav_div{
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+    background: #fff;
+    border-bottom: 1px solid #bdc3c7;
+    
+        .container{
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+            
+            .navbar{
+                display: flex;
+                align-items: center;
+                padding: 10px;
+               
+                img{
+                    width: 130px;
+                }
+            
+                nav{
+                    display: flex;
+                    justify-content: flex-end;
+                    flex: 1;
+            
+                    ul{
+                        display: flex;
+                        align-items: center;
+                        list-style-type: none;
+            
+                        li{
+                            margin-right: 20px;
+                               
+                            a{
+                                text-decoration: none;
+                                color: #747d8c;
+
+                                &:hover{
+                                    color: #e15f41;
+                                }
+                            }
+                        }
+
+                        .active_class {
+                            color: #e15f41;
+                            border-bottom: solid 2px #e15f41;
+                        }
+                    }
+
+                    #contact_id {
+                        &:target {
+                            color: #e15f41;
+                            border-bottom: solid 1px #e15f41;
+                        }
+                    }
+                }
+                .menu_icon{
+                    width: 25px;
+                    margin-left: 20px;
+                    display: none;
+                }
+            }
+        
+            
+        }
+        
+}
+.hero{
+    min-height: 85vh;
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)) ,url('../images/heroBack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .hero-col{
+        
+        flex-basis: 50%;
+        // min-width: 300px;
+        padding: 0 50px;
+        
+        img{
+            max-width: 100%;
+        }
+
+        h1{
+            color: #dfe4ea;
+            font-size: 40px;
+            line-height: 50px;
+            margin: 20px 0 10px 0;
+        }
+        p{
+            color: #ced6e0;
+        }
+        .more_btn{
+            display: inline-block;
+            background: #ff3f34;
+            color: #fff;
+            padding: 10px 25px;
+            margin: 30px 0;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            transition: .5s;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+// media query for navbar
+
+@media screen and (max-width: 800px) {
+      
+   nav ul {
+       max-height: 0px;
+       position: absolute;
+       top: 55px;
+       right: 0;
+       background: #f7f7f7;   
+       width: 100%;     
+       flex-direction: column;
+       overflow: hidden;
+       transition: max-height 0.5s;
+   
+    
+       li{
+           width: 100%;
+           display: none;
+           margin: 10px 0 10px 40px;
+           border-bottom: 1px solid #ced6e0;
+            a{
+                color: #000 !important;
+                text-transform: uppercase;
+           }
+       }
+   }
+   .menu_icon{
+       display: block !important;
+       cursor: pointer;
+   }
+}
+
+// media query for less than 600 screen size
+
+@media screen and (max-width: 600px) {
+    .hero {
+        min-height: 90vh;
+        justify-content: space-around;
+        text-align: center;
+        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url('../images/mobileback.jpg');
+
+        .hero-col{
+            padding: 0 0;
+            h1{
+                white-space: nowrap;
+                margin-top: 30px;
+                font-size: 25px;
+                line-height: 35px;
+            }
+
+            img{
+                max-width: 100%;
+            }
+        }
+
+        .hero-col {
+            flex-basis: 100%;
+        }
+    }
+} 

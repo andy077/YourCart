@@ -1,0 +1,126 @@
+
+.product_main{
+    // background: linear-gradient(90deg, rgba(223, 228, 234, 1) 0%,  rgba(255,255,255, 1) 100%);   
+    background: #F7F7F7;
+    border-top: 1px solid #bdc3c7;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.product_div{
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px 0;
+
+    .title_div{
+        text-align: center;
+        margin: 0 auto 50px;
+        line-height: 50px;
+        color: #57606f;
+        position: relative;
+
+        &::before{
+            content: '';
+            width: 70px;
+            height: 3px;
+            position: absolute;
+            background: #2c2c54;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+
+    .offer_options {
+        background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(223,228,234,1) 50%, rgba(247,247,247,1) 100%);
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        text-transform: uppercase;
+        flex-wrap: wrap;
+
+        h3{
+            color: #2f3542;
+            cursor: pointer;
+
+            &:nth-child(1)
+            {
+                color: #ff4757;
+            }
+        }
+        
+    }
+    #active_offer{
+        width: 200px;
+        border: none;
+        background: #ff4500;
+        height: 3px;
+        transform: translateX(75px);
+        transition: transform .7s;
+    }
+
+    .product_row{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 50px;
+        transition: 2s;
+
+        .col{
+            max-width: 220px;
+            flex-basis: 25%;
+            padding-top: 50px;
+            // min-width: 250px;
+            // margin-bottom: 20px;
+            transition: .6s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        
+            img{
+                width: 100%;
+                border-radius: 3px;
+            }
+
+            h4{
+                color: #596275;
+                font-weight: normal;
+            }
+            p{
+                font-size: 15px;
+                color: #596275;
+            }
+
+            .product_rating{
+                color: #ff5e57;
+            }
+        }
+    }
+}
+
+// media query for less than 600 screen size
+
+@media screen and (max-width: 600px) {
+
+    .product_row {
+        text-align: center;
+
+        .col {
+            flex-basis: 50% !important;
+            padding: 0 5px;
+
+            img{
+                width: 100% !important;
+            }
+        }
+    }
+} 
+
+@media screen and (max-width: 1080px) {
+
+    #active_offer {
+        display: none;
+    }
+}

@@ -1,0 +1,135 @@
+
+.cart_main{
+    padding: 0 80px;
+    letter-spacing: .5px;
+
+    .cart_row{
+        max-width: 1080px;
+        margin: auto;
+        padding: 80px 80px;
+
+        .cartTitles{
+            border-radius: 2px;
+            display: flex;
+            justify-content: space-between;
+            background: #EEEEEE;
+            
+            h3 {
+            color: #000;
+            font-size: 14px;
+            padding: 10px;
+            }
+        }
+
+            .item_row{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 0;
+
+                .productImg{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    width: 33%;
+
+                    img{
+                        width: 20%;
+                        margin-right: 10px;
+                    }
+
+                    h4, p{
+                        font-size: 15px;
+                        color: #2f3542;
+                    }
+                    .remove_btn{
+                        color: #ff7f50;
+                        text-decoration: none;
+                        transition: .5s;
+
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+                input{
+                    position: relative;
+                    right: 130px;
+                    width: 40px;
+                    padding: 3px 0;
+                    outline: none;
+                    border: .5px solid #000;
+                    
+                }
+            }
+
+            .billing_info{
+                display: flex;
+                justify-content: flex-end;
+                
+                .row{
+                    border-top: 2px solid #ff7f50;
+                    width: 492px;
+                    line-height: 40px;
+                    
+
+                    .bill_col{
+                        display: flex;
+                        justify-content: space-between;
+                        color: #2f3542;
+                    }
+                }
+            }
+            .checkout {
+                margin: 20px 0;
+                text-align: right;
+
+                .pay_btn {
+                    background: #ff7f50;
+                    color: #fff;
+                    padding: 6px 15px;
+                    border-radius: 20px;
+                    text-decoration: none;
+                    transition: .5s;
+    
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+    }
+}
+
+
+// media query for less than 600 screen size
+
+@media screen and (max-width: 600px) {
+    .cart_main{
+        padding: 0 10px;
+        .cart_row{
+            padding: 30px 0px;
+            // margin: 0px 10px;
+
+            img{
+                width: 90% !important;
+            }
+
+            .added_details{
+                margin: 5px 0;
+                p{
+                    font-size: 15px;
+                }
+                h4{
+                    display: none;
+                }
+            }
+            input{
+                right: 20px !important;
+            }
+
+            .checkout {
+                text-align: center;
+            }
+        }
+    }
+}

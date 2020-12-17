@@ -1,0 +1,120 @@
+
+.testimonials{    
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .title{
+        text-align: center;
+        margin: 0 auto 50px;
+        color: #57606f;
+        position: relative;
+
+        &::before{
+            content: '';
+            width: 70px;
+            height: 3px;
+            position: absolute;
+            background: #2c2c54;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+
+    .testimonial_inner_div{
+        max-width: 1200px;
+        margin: auto;
+        padding-right: 25px;
+        padding-left: 25px;
+    
+        .testm_row{
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .testm_col{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 10px 0px;       
+                padding: 20px;      
+                max-width: 38vw;
+                flex-basis: 50%;
+                min-width: 250px;
+                border-radius: 20px;
+                transition: .5s;
+                cursor: pointer;
+
+                &:nth-child(1) {
+                    background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59); 
+                }
+
+                &:nth-child(2) {
+                    background: linear-gradient(to left, #fc5c7d, #6a82fb);
+                }
+
+                &:nth-child(3) {
+                    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+                }
+
+                &:nth-child(4) {
+                    background: linear-gradient(to left, #00f260, #0575e6);
+                }
+
+                &:hover{
+                    transform: scale(1.05);
+                }
+    
+                .desc{
+                    text-align: center;
+                    line-height: 20px;
+
+                    h2{
+                        color: #2c2c54;
+                        margin: 5px 0;
+                    }
+                    p{
+                        font-size: 13px;
+                    }
+                }
+    
+                img{
+                    border-radius: 50%;
+                    width: 35%;
+                    box-shadow: 0 0 5px #2c2c54;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .testimonials {
+        .testimonial_inner_div {
+            .testm_row {
+                .testm_col {
+                    margin-top: 30px !important;
+                    // background: #dfe4ea;
+                    border-radius: 15px;
+                    // box-shadow: 0 0 3px #a5b1c2;
+                    &:nth-child(1) {
+                        margin-top: 0px !important;
+                    }
+
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+

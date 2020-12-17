@@ -1,0 +1,39 @@
+.about_main {
+    // background: #dfe4ea;
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(210, 218, 226, .5)) ,url('../images/aboutBack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+
+    .about_title {
+        text-align: center;
+        position: relative;
+
+        h1{
+            color: #f1f2f6;
+        }
+
+        
+        &::after{
+            content: '';
+            width: 100px;
+            height: 2px;
+            position: absolute;
+            background: #a4b0be;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+
+    .about_details {
+        max-width: 900px;
+        line-height: 28px;
+        margin: 50px auto;
+        background: #d1d8e0;
+        color: #485460;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 3px #485460;
+        border-radius: 20px;
+    }
+}
