@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, BrowserRouter } from 'react-router-dom'
+import { Route, Switch, HashRouter } from 'react-router-dom'
 import Home from './Home/Home.jsx';
 import Products from './Products/Products.jsx';
 import ProductDetails from './Products/ProductDetails';
@@ -10,7 +10,7 @@ import Account from './Account/Account';
 const App = () => {
     return (
         <>
-            <BrowserRouter basename='/yourcart' forceRefresh={true}>
+            <HashRouter basename='/yourcart' forceRefresh={true}>
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route exact path='/products' component={Products} />
@@ -19,7 +19,7 @@ const App = () => {
                     <Route exact path='/account' component={Account} />
                     <Route exact path='/cart' component={Cart} />
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         </>
     )
 }
