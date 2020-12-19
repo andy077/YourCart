@@ -83,9 +83,12 @@ html {
   border-bottom: solid 2px #e15f41;
 }
 
+.nav_div .container .navbar nav #contact_id {
+  cursor: pointer;
+}
+
 .nav_div .container .navbar nav #contact_id:target {
   color: #e15f41;
-  border-bottom: solid 1px #e15f41;
 }
 
 .nav_div .container .navbar .menu_icon {

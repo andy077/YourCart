@@ -63,9 +63,9 @@ html{
                     }
 
                     #contact_id {
+                        cursor: pointer;
                         &:target {
                             color: #e15f41;
-                            border-bottom: solid 1px #e15f41;
                         }
                     }
                 }
