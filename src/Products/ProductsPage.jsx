@@ -16,16 +16,16 @@ const ProductsPage = () => {
             <div className='product_main'>
 
                 <div className='category_btn'>
-                    <button onClick={categoryToggle} id='cat_btn'>Categories <ExpandMoreIcon id='catArrow'/></button>
-                    <button onClick={filterToggle} id='filter_btn'>Apply Filters <ExpandMoreIcon id='filterArrow'/></button>
+                    <button onClick={categoryToggle} id='cat_btn'>Categories <ExpandMoreIcon id='catArrow' /></button>
+                    <button onClick={filterToggle} id='filter_btn'>Apply Filters <ExpandMoreIcon id='filterArrow' /></button>
                 </div>
                 <div className='category_main'>
                     <div className='category_div'>
-                        <h3>Men <AddOutlinedIcon className='plus_icon'/></h3>
-                        <h3>Women <AddOutlinedIcon className='plus_icon'/></h3>
-                        <h3 >Kids <AddOutlinedIcon className='plus_icon'/></h3>
-                        <h3 >Home And Appliances <AddOutlinedIcon className='plus_icon'/></h3>
-                        <h3 >Offers <AddOutlinedIcon className='plus_icon'/></h3>
+                        <h3>Men <AddOutlinedIcon className='plus_icon' /></h3>
+                        <h3>Women <AddOutlinedIcon className='plus_icon' /></h3>
+                        <h3 >Kids <AddOutlinedIcon className='plus_icon' /></h3>
+                        <h3 >Home And Appliances <AddOutlinedIcon className='plus_icon' /></h3>
+                        <h3 >Offers <AddOutlinedIcon className='plus_icon' /></h3>
                     </div>
                     <div className='search_product'>
                         <input type='text' placeholder='Search for products...'></input>
@@ -43,7 +43,7 @@ const ProductsPage = () => {
                     </div>
                 </div>
 
-                
+
 
                 <div className='product_div'>
                     <div className='products_dropdown'>
@@ -58,7 +58,6 @@ const ProductsPage = () => {
 
                     <div className='product_row'>
                         <div className='col'>
-                            {/* <NavLink exact to='/productDetails' activeClassName='active_class'><img src={require('../images/product1.jpg')} /></NavLink> */}
                             <NavLink exact to='/productDetails'><img src={require('../images/product1.jpg')} /></NavLink>
                             <h4>HRX Sweatshirt</h4>
                             <div className='product_rating'>

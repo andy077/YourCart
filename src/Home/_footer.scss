@@ -23,7 +23,6 @@
     }
 
     .footer_div{
-        // background: blue;
         max-width: 1080px;
         margin: auto;
         padding-right: 25px;
@@ -81,18 +80,3 @@
         }
     }
 }
-
-// media query for less than 600 screen size
-
-@media screen and (max-width: 600px) {
-    .inner_div {
-        justify-content: center !important;
-
-        h3{
-            margin: 3px; 
-        }
-        li {
-            text-align: center;
-        }
-    }
-} 

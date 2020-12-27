@@ -1,5 +1,4 @@
 .about_main {
-    // background: #dfe4ea;
     background-image: linear-gradient(rgba(0,0,0,.7), rgba(210, 218, 226, .5)) ,url('../images/aboutBack.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,11 +28,17 @@
         max-width: 900px;
         line-height: 28px;
         margin: 50px auto;
-        background: #d1d8e0;
+        background: #dfe4ea;
         color: #485460;
         padding: 20px;
         text-align: center;
         box-shadow: 0 0 3px #485460;
         border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about_main {
+        padding: 50px 10px;
     }
 }

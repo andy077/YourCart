@@ -36,9 +36,6 @@ const LatestProducts = () => {
                 h3test[1].style.color='#2f3542';
             }
         }
-
-
-
     }
 
     return (

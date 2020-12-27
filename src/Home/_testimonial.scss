@@ -43,7 +43,7 @@
                 padding: 20px;      
                 max-width: 38vw;
                 flex-basis: 50%;
-                min-width: 250px;
+                min-width: 310px;
                 border-radius: 20px;
                 transition: .5s;
                 cursor: pointer;
@@ -99,18 +99,16 @@
     
     .testimonials {
         .testimonial_inner_div {
-            .testm_row {
+            .testm_row {           
                 .testm_col {
                     margin-top: 30px !important;
-                    // background: #dfe4ea;
                     border-radius: 15px;
-                    // box-shadow: 0 0 3px #a5b1c2;
                     &:nth-child(1) {
                         margin-top: 0px !important;
                     }
 
                     img{
-                        width: 50%;
+                        width: 60%;
                     }
                 }
             }

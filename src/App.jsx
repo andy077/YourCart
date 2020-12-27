@@ -11,7 +11,7 @@ const App = () => {
     
     return (
         <>
-            <BrowserRouter basename={process.env.PUBLIC_URL + "/"} forceRefresh={true}>
+            <BrowserRouter forceRefresh={true}>
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route exact path='/products' component={Products} />

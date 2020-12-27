@@ -74,10 +74,6 @@
             // min-width: 250px;
             // margin-bottom: 20px;
             transition: .6s;
-
-            &:hover{
-                transform: scale(1.1);
-            }
         
             img{
                 width: 100%;
@@ -101,6 +97,16 @@
 }
 
 // media query for less than 600 screen size
+
+@media (hover: hover) {
+    .product_row {
+        .col {
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 600px) {
 

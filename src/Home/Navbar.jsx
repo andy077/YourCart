@@ -1,12 +1,9 @@
 import React from 'react';
-import { Link,NavLink } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import menuToggle from './menutoggle.js';
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
-const Navbar = () => {
 
-const contactUs = () => {
-    document.getElementById('contact').scrollIntoView(); 
-}
+const Navbar = () => {
 
     return (
         <>
@@ -25,7 +22,7 @@ const contactUs = () => {
                                 <li className='menuList'><NavLink exact to='/' activeClassName='active_class'>Home</NavLink></li>
                                 <li className='menuList'><NavLink exact to='/products' activeClassName='active_class'>Products</NavLink></li>
                                 <li className='menuList'><NavLink exact to='/about' activeClassName='active_class'>About</NavLink></li>
-                                <li className='menuList'><a onClick={contactUs} id='contact_id'>Contact</a></li>
+                                <li className='menuList'><a href='#contact' id='contact_id'>Contact</a></li>
                                 <li className='menuList'><NavLink exact to='/account' activeClassName='active_class'>Account</NavLink></li>
                                 <li className='menuList'>
                                     <NavLink exact to='/cart' activeClassName='active_class'>
