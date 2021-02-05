@@ -5,6 +5,16 @@ import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
 
 const Navbar = () => {
 
+    document.addEventListener('click', function(e) {
+        var className = 'contact_smooth';
+        var classList = document.documentElement.classList;
+        if (e.target.dataset.smoothScroll) {
+          classList.add(className)
+        } else {
+          classList.remove(className)
+        }
+      })
+
     return (
         <>
             <div className='nav_div'>
@@ -22,7 +32,7 @@ const Navbar = () => {
                                 <li className='menuList'><NavLink exact to='/' activeClassName='active_class'>Home</NavLink></li>
                                 <li className='menuList'><NavLink exact to='/products' activeClassName='active_class'>Products</NavLink></li>
                                 <li className='menuList'><NavLink exact to='/about' activeClassName='active_class'>About</NavLink></li>
-                                <li className='menuList'><a href='#contact' id='contact_id'>Contact</a></li>
+                                <li className='menuList'><a href='#contact' id='contact_id' data-smooth-scroll="1">Contact</a></li>
                                 <li className='menuList'><NavLink exact to='/account' activeClassName='active_class'>Account</NavLink></li>
                                 <li className='menuList'>
                                     <NavLink exact to='/cart' activeClassName='active_class'>

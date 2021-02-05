@@ -5,18 +5,19 @@ import StarIcon from '@material-ui/icons/Star';
 import StarHalfIcon from '@material-ui/icons/StarHalf';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 
-const ProductDetails = () => {
 
-    window.onload = () => {
-        const productImage = document.getElementById('productImg');
+document.addEventListener('load', function() {
+    const productImage = document.getElementById('productImg');
         const smallImage = document.getElementsByClassName('smallImg');
-
+    
         for (let i = 0; i < smallImage.length; i++) {
             smallImage[i].onclick = () => {
                 productImage.src = smallImage[i].src;
             }
         }
-    }
+ }, true);
+
+const ProductDetails = () => {
 
     return (
         <>

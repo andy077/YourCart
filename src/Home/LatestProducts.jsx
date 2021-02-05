@@ -4,9 +4,7 @@ import StarIcon from '@material-ui/icons/Star';
 import StarHalfIcon from '@material-ui/icons/StarHalf';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 
-const LatestProducts = () => {
-
-    window.onload = () => {    
+document.addEventListener('load', function() {   
         
         const h3test = document.querySelectorAll('h3');
         const backtest=document.getElementById('active_offer');
@@ -18,7 +16,7 @@ const LatestProducts = () => {
                 h3test[0].style.color='#ff4757';
                 h3test[1].style.color='#2f3542';
                 h3test[2].style.color='#2f3542';
-
+    
                 colRev.style.flexDirection='initial';
             }
             h3test[1].onclick = () => {
@@ -36,7 +34,9 @@ const LatestProducts = () => {
                 h3test[1].style.color='#2f3542';
             }
         }
-    }
+}, true);
+
+const LatestProducts = () => {
 
     return (
         <>
