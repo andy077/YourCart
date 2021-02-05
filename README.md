@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Watch live project on https://andy077.github.io/yourcart/
+Watch live project on https://yourcart1.netlify.app/
 
 ## Available Scripts
 
